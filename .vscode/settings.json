@@ -1,0 +1,10 @@
+{
+    "editor.fontFamily": "Source code pro",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 25,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Darcula"
+}

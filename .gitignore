@@ -1,2 +1,8 @@
 .vscode/
 .vscode/settings.json
+assets/img/blob-bg.svg
+materi/
+materi/index.html
+materi/css/
+materi/css/style.css
+js/cookie.js
