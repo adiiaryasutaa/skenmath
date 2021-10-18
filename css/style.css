@@ -38,3 +38,7 @@ section#banner div.container-fluid {
 footer a:hover {
   text-decoration: underline !important; 
 }
+
+footer img#skenmath-logo {
+  filter: grayscale(100%);
+}
