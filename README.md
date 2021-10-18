@@ -16,3 +16,10 @@ Lorem laksldalskdl aklskdalksj klask lkajslkjdlakjs klajlskdj lkasjlkdj lakslkdj
 - Dinda Nirmala
 - Pera Pradnyani
 - Adi Aryasuta
+
+---
+
+<p>© Copyright 2021 SKENMATH team. All rights reserved.</p>
+
+Code licensed under [MIT License](https://github.com/adiiaryasutaa/skenmath/blob/main/LICENSE)
+  
