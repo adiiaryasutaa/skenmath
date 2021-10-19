@@ -1,6 +1,7 @@
 <!-- 
   Author: Adi Aryasuta
   Since: October 11, 2021
+  Last updated: October 19, 2021
  -->
 
 <!DOCTYPE html>
@@ -29,8 +30,10 @@
 
 <body>
 
+<header>
+
   <!-- ========== Navbar ========== -->
-  <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent px-3 px-sm-5 py-4 mt-3">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent px-3 px-sm-5 py-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="assets/img/skenmath-logo-design-1.svg" width="35px" alt="skenmath-logo">
@@ -55,7 +58,11 @@
           </li>
         </ul>
         <div class="d-flex">
-          <button tabindex="0" id="theme-toggle-btn" type="button" class="btn" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Dark mode enabled"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button>
+          <button id="theme-toggle-btn" class="btn" type="button"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button>
+          
+          <!-- Remove popover -->
+          
+          <!-- <button tabindex="0" id="theme-toggle-btn" type="button" class="btn" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Dark mode enabled"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button> -->
         </div>
       </div>
     </div>
@@ -63,8 +70,8 @@
   <!-- ========== Navbar ========== -->
 
 
-  
-  <!-- ========== Banner/Jumbotron ========== -->
+
+  <!-- ========== Hero Banner/Jumbotron ========== -->
   <section id="banner" class="container-fluid px-sm-5">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <div class="d-flex flex-column align-items-center text-center w-100">
@@ -77,7 +84,9 @@
       </div>
     </div>
   </section>
-  <!-- ========== Banner/Jumbotron ========== -->
+  <!-- ========== Hero Banner/Jumbotron ========== -->
+
+</header>
 
 
 
@@ -202,7 +211,8 @@
   <!-- Local JS -->
   <script src="js/script.js"></script>
   <script src="js/cookie.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <!-- <script src="js/bootstrap.js"></script> -->
+  <script src="js/Navbar.js"></script>
 
 </body>
 

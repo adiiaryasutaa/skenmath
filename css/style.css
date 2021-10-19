@@ -6,21 +6,17 @@
   transition: all 0.5s;
 }
 
-section:not(:first-of-type), footer {
-  margin-top: 10rem !important;
+header,
+section{
+  margin-bottom: 10rem !important;
 }
 
-section#banner {
-  /* background-image: url('../assets/img/blob-bg.svg'); */
-  /* background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat; */
+header {
   background-color: #c4c4c4;
 }
 
 section#banner div.container-fluid {
-  /* height: 580px; */
-  height: 100vh;
+  height: 580px;
 }
 
 @media screen and (max-width: 992px) {
