@@ -4,7 +4,7 @@
 </div>
 
 ## Description
-Lorem laksldalskdl aklskdalksj klask lkajslkjdlakjs klajlskdj lkasjlkdj lakslkdjlka slkdalk  alksjdlkaj lalk lskldj alksjld laksldkj lkasjdl alksjlkd alksdlk alksd alksjd alksjd laksjlkdj alksjd laksjd lkaslkdj lkasdl
+Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum
 
 ## Tech Stack
 - Bootstrap
