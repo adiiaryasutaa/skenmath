@@ -1,7 +1,7 @@
 <!-- 
   Author: Adi Aryasuta
   Since: October 11, 2021
-  Last updated: October 19, 2021
+  Last updated: October 21, 2021
  -->
 
 <!DOCTYPE html>
@@ -30,63 +30,66 @@
 
 <body>
 
-<header>
+  <!-- ========== Hero Banner ========== -->
+  <section class="container-fluid">
 
-  <!-- ========== Navbar ========== -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent px-3 px-sm-5 py-4">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/skenmath-logo-design-1.svg" width="35px" alt="skenmath-logo">
-        <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span>
-      </a>
-      <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav flex-grow-1 justify-content-center me-auto mb-2 mb-lg-0">
-          <li class="nav-item pe-1">
-            <a class="nav-link active" aria-current="page" href="#">Halaman Utama</a>
-          </li>
-          <li class="nav-item pe-1">
-            <a class="nav-link" href="materi/">Materi</a>
-          </li>
-          <li class="nav-item pe-1">
-            <a class="nav-link" href="#">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/adiiaryasutaa/skenmath/blob/main/LICENSE">Lisensi</a>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <button id="theme-toggle-btn" class="btn" type="button"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button>
-          
-          <!-- Remove popover -->
-          
-          <!-- <button tabindex="0" id="theme-toggle-btn" type="button" class="btn" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Dark mode enabled"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button> -->
+    <!-- ========== Navbar ========== -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent px-3 px-sm-5 py-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/skenmath-logo-design-1.svg" width="35px" alt="skenmath-logo">
+          <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span>
+        </a>
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav flex-grow-1 justify-content-center me-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-1">
+              <a class="nav-link active" aria-current="page" href="#">Halaman Utama</a>
+            </li>
+            <li class="nav-item pe-1">
+              <a class="nav-link" href="materi/">Materi</a>
+            </li>
+            <li class="nav-item pe-1">
+              <a class="nav-link" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/adiiaryasutaa/skenmath/blob/main/LICENSE">Lisensi</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button id="theme-toggle-btn" class="btn" type="button"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button>
+            
+            <!-- Remove popover -->
+            
+            <!-- <button tabindex="0" id="theme-toggle-btn" type="button" class="btn" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Dark mode enabled"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== Navbar ========== -->
+
+
+
+    
+    <!-- ========== Jumbotron ========== -->
+    <div id="banner" class="container-fluid px-sm-5">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column align-items-center text-center w-100">
+          <h1>Lorem ipsum dolor sit amet consectetur</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem totam quis, quo, neque consequuntur iste rerum quidem dicta optio nihil maxime blanditiis repudiandae sint. Fuga?</p>
+          <div class="d-flex flex-sm-row flex-column">
+            <button type="button" class="btn btn-primary btn-lg me-sm-1 mb-sm-0 mb-2">Large button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg ms-sm-1">Large button</button>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
-  <!-- ========== Navbar ========== -->
+    <!-- ========== Jumbotron ========== -->
 
-
-
-  <!-- ========== Hero Banner/Jumbotron ========== -->
-  <section id="banner" class="container-fluid px-sm-5">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <div class="d-flex flex-column align-items-center text-center w-100">
-        <h1>Lorem ipsum dolor sit amet consectetur</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem totam quis, quo, neque consequuntur iste rerum quidem dicta optio nihil maxime blanditiis repudiandae sint. Fuga?</p>
-        <div class="d-flex flex-sm-row flex-column">
-          <button type="button" class="btn btn-primary btn-lg me-sm-1 mb-sm-0 mb-2">Large button</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg ms-sm-1">Large button</button>
-        </div>
-      </div>
-    </div>
   </section>
-  <!-- ========== Hero Banner/Jumbotron ========== -->
-
-</header>
+  <!-- ========== Hero Banner ========== -->
 
 
 
