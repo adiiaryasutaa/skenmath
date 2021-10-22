@@ -1,0 +1,9 @@
+/* 
+  Author: Adi Aryasuta
+  Created: October 17, 2021
+  Modified: October 22, 2021 
+*/
+
+section#hero-banner {
+  height: calc(var(--hero-banner-height) / 1.4);
+}
