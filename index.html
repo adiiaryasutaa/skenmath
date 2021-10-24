@@ -1,11 +1,11 @@
 <!-- 
   Author: Adi Aryasuta
-  Created: October 11, 2021
-  Modified: October 23, 2021
+  Created: October 9, 2021
+  Modified: October 24, 2021
  -->
 
 <!DOCTYPE html>
-<html lang="en" theme="light">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -28,7 +28,7 @@
   <title>SkenMath</title>
 </head>
 
-<body>
+<body data-theme="light">
 
   <!-- ========== Hero Banner ========== -->
   <section id="hero-banner" class="container-fluid d-flex flex-column">
@@ -69,11 +69,12 @@
     <div id="banner" class="container-fluid flex-grow-1 d-flex justify-content-between px-sm-5">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="d-flex flex-column align-items-center text-center w-100">
-          <h1>Lorem ipsum dolor sit amet consectetur</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem totam quis, quo, neque consequuntur iste rerum quidem dicta optio nihil maxime blanditiis repudiandae sint. Fuga?</p>
+          <div class="display-6 mb-3">
+            <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span>
+          </div>
+          <p class="text-muted mb-5">Belajar matematika di sini ajah</p>
           <div class="d-flex flex-sm-row flex-column">
-            <button type="button" class="btn btn-primary btn-lg me-sm-1 mb-sm-0 mb-2">Large button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg ms-sm-1">Large button</button>
+            <a href="materi/" type="button" class="btn btn-secondary me-sm-1 mb-sm-0 mb-2">Mulai belajar sekarang!!</a>
           </div>
         </div>
       </div>
@@ -88,7 +89,7 @@
   <section id="bindings" class="container-fluid px-sm-5 mt-lg-5 mt-1">
     <div class="container text-center">
       <h2>Berusaha untuk menyajikan materi yang mudah dipahami</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis ex, saepe laborum reprehenderit voluptatum et, officiis, eligendi id iste atque error? Cumque dolor voluptates iure neque ea harum ducimus.</p>
+      <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis ex, saepe laborum reprehenderit voluptatum et, officiis, eligendi id iste atque error? Cumque dolor voluptates iure neque ea harum ducimus.</p>
       <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center mt-5">
         <img class="binding-img me-md-4 me-sm-2 mt-sm-0 mt-4" src="assets/img/no-img.png" alt="">
         <img class="binding-img mt-sm-0 mt-4" src="assets/img/no-img.png" alt="">
@@ -101,37 +102,37 @@
 
 
   <!-- ========== Features ========== -->
-  <section id="features" class="container-fluid px-sm-5 mt-5">
+  <section id="features" class="container-fluid p-sm-5 mt-5">
     <div class="container text-center">
       <h2>Banyak fitur yang akan kami hadirkan</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <div class="row row-cols-1 row-cols-lg-2 text-start mt-5">
         <div class="col d-flex align-items-start align-self-baseline">
           <img class="me-3" src="assets/img/no-icon.png" alt="">
           <div class="lh-base">
             <h5>Materi yang mudah dipahami</h5>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start align-self-baseline">
           <img class="me-3" src="assets/img/no-icon.png" alt="">
           <div class="lh-base">
             <h5>Penjelasan materi yang singkat</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start align-self-baseline">
           <img class="me-3" src="assets/img/no-icon.png" alt="">
           <div class="lh-base">
             <h5>Sumber materi yang terpercaya</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start align-self-baseline">
           <img class="me-3" src="assets/img/no-icon.png" alt="">
           <div class="lh-base">
             <h5>Tampilan UI yang menarik</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
@@ -146,7 +147,7 @@
     <div class="container">
       <div class="text-center mb-5">
         <h2>Ceritakan Pengalamanmu</h2>
-        <p>Bagaimana pengalamanmu belajar dengan <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span></p>
+        <p class="text-muted">Bagaimana pengalamanmu belajar dengan <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span></p>
       </div>
       <form>
         <div class="mb-3">
@@ -201,7 +202,7 @@
             <li>Powered by <a class="text-white-50 text-decoration-none" href="">Bootstrap</a></li>
             <li>Report <a class="text-white-50 text-decoration-none" href="https://github.com/adiiaryasutaa/skenmath/issues">an Issue</a></li>
           </ul>
-          <a class="text-white text-decoration-none" href="https://github.com/adiiaryasutaa/skenmath"><i class="bi-github"></i></a>
+          <a class="text-white text-decoration-none fs-5" href="https://github.com/adiiaryasutaa/skenmath"><i class="bi-github"></i></a>
         </div>
       </div>
     </div>
@@ -215,7 +216,9 @@
 
   <!-- Global JS -->
   <script src="dist/js/script.js"></script>
+  <script src="dist/js/Theme.js"></script>
   <script src="dist/js/Navbar.js"></script>
+  <script src="dist/js/cookie.js"></script>
 
 </body>
 

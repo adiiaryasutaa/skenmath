@@ -1,1 +1,36 @@
-/* IN DEVELOPMENT */
+/* 
+  Author: Adi Aryasuta
+  Created: October 9, 2021
+  Modified: October 24, 2021 
+*/
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #f8f9fa;
+  --text-color: #444;
+  --hero-banner-background-blend-mode: normal;
+}
+
+[data-theme="dark"] {
+  --primary-color: #222;
+  --secondary-color: rgb(37, 37, 37);
+  --text-color: #f8f9fa;
+  --hero-banner-background-blend-mode: soft-light;
+}
+
+* {
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+section#hero-banner {
+  background-blend-mode: var(--hero-banner-background-blend-mode);
+}
+
+section#hero-banner,
+section#features {
+  background-color: var(--secondary-color);
+}

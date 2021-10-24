@@ -1,29 +1,30 @@
 /* 
   Author: Adi Aryasuta
   Created: October 9, 2021
-  Modified: October 22, 2021 
+  Modified: October 24, 2021 
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --section-gap: 10rem !important;
-  --hero-banner-height: 540px;
+  --hero-banner-height: 580px;
 }
 
 * {
   font-family: 'Poppins', sans-serif;
-  color: #444;
   transition: all 0.5s;
 }
 
-header,
 section {
   margin-bottom: var(--section-gap);
 }
 
 section#hero-banner {
-  background-color: #c4c4c4;
+  background-image: url('../../assets/img/hero-banner-img.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: var(--hero-banner-height);
 }
 
