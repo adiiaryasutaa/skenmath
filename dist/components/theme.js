@@ -1,9 +1,3 @@
-/*
-  Author: Adi Aryasuta
-  Created: October 24, 2021
-  Modified October 24, 2021
-*/
-
 const body = document.body;
 const themeToggleButton = document.querySelector('#theme-toggle-btn');
 const themeToggleButtonIcon = document.querySelector('#theme-toggle-btn-icon');
