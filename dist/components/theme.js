@@ -14,6 +14,9 @@ function changeTheme() {
     
     // Change navbar
     changeNavbarTheme(true);
+
+    // change material cards theme
+    changeMaterialCardTheme(true);
     
     // change toogle button icon
     themeToggleButtonIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
@@ -21,8 +24,11 @@ function changeTheme() {
     // set value of body's data-theme to light
     body.setAttribute('data-theme', 'light');
     
-    // change navbar
+    // change navbar theme
     changeNavbarTheme(false);
+
+    // change material cards theme
+    changeMaterialCardTheme(false);
     
     // change toogle button icon
     themeToggleButtonIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');

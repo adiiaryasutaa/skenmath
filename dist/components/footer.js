@@ -5,7 +5,6 @@ class Footer extends HTMLElement {
 
     let
       brandLogoSrc = this.hasAttribute('brand-logo-src') ? this.getAttribute('brand-logo-src') : './',
-      brandHref    = this.hasAttribute('brand-href') ? this.getAttribute('brand-href') : '#',
       homePageHref = this.hasAttribute('home-page-href') ? this.getAttribute('home-page-href') : '#',
       materialHref = this.hasAttribute('material-href') ? this.getAttribute('material-href') : '#',
       aboutUsHref  = this.hasAttribute('about-us-href') ? this.getAttribute('about-us-href') : '#',
