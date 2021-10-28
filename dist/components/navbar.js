@@ -20,7 +20,8 @@ class Navbar extends HTMLElement {
       homePageHref = this.hasAttribute('home-page-href') ? this.getAttribute('home-page-href') : '#',
       materialHref = this.hasAttribute('material-href') ? this.getAttribute('material-href') : '#',
       aboutUsHref  = this.hasAttribute('about-us-href') ? this.getAttribute('about-us-href') : '#',
-      lisenceHref  = this.hasAttribute('lisence-href') ? this.getAttribute('lisence-href') : '#';
+      lisenceHref  = this.hasAttribute('lisence-href') ? this.getAttribute('lisence-href') : '#',
+      activePage = this.hasAttribute('active-page') ? this.getAttribute('active-page') : '1';
 
     this.innerHTML = `
       <nav id="navbar" class="${classes}">
@@ -35,13 +36,13 @@ class Navbar extends HTMLElement {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav flex-grow-1 justify-content-center me-auto mb-2 mb-lg-0">
               <li class="nav-item pe-1">
-                <a class="nav-link active" aria-current="page" href="${homePageHref}">Halaman Utama</a>
+                <a class="nav-link ${activePage === '1' ? 'active' : ''}" ${activePage === '1' ? 'aria-current="page"' : ''} href="${homePageHref}">Halaman Utama</a>
               </li>
               <li class="nav-item pe-1">
-                <a class="nav-link" href="${materialHref}">Materi</a>
+                <a class="nav-link ${activePage === '2' ? 'active' : ''}" ${activePage === '2' ? 'aria-current="page"' : ''} href="${materialHref}">Materi</a>
               </li>
               <li class="nav-item pe-1">
-                <a class="nav-link" href="${aboutUsHref}">Tentang Kami</a>
+                <a class="nav-link ${activePage === '3' ? 'active' : ''}" ${activePage === '3' ? 'aria-current="page"' : ''} href="${aboutUsHref}">Tentang Kami</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="${lisenceHref}">Lisensi</a>

@@ -2,11 +2,11 @@ const body = document.body;
 const themeToggleButton = document.querySelector('#theme-toggle-btn');
 const themeToggleButtonIcon = document.querySelector('#theme-toggle-btn-icon');
 
-let darkModeEnabled = false;
+let darkModeEnabled = sessionStorage.getItem('darkModeEnabled') == null ? false : (sessionStorage.getItem('darkModeEnabled') === 'true' ? true : false);
 
-themeToggleButton.addEventListener('click', () => {
+function changeTheme() {
 
-  darkModeEnabled = darkModeEnabled ? false : true;
+  sessionStorage.setItem('darkModeEnabled', darkModeEnabled ? 'true' : 'false');
   
   if (darkModeEnabled) {
     // set value of body's data-theme to dark
@@ -27,4 +27,11 @@ themeToggleButton.addEventListener('click', () => {
     // change toogle button icon
     themeToggleButtonIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
   }
+}
+
+themeToggleButton.addEventListener('click', () => {
+  darkModeEnabled = darkModeEnabled ? false : true;
+  changeTheme();
 });
+
+changeTheme();

@@ -5,7 +5,7 @@
  -->
 
 <!DOCTYPE html>
-<html lang="en" theme="light">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -37,36 +37,15 @@
   <section id="hero-banner" class="container-fluid d-flex flex-column">
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent py-4">
-      <div class="container">
-        <a class="navbar-brand" href="../">
-          <img src="../assets/img/skenmath-logo-design-1.svg" width="35px" alt="skenmath-logo">
-          <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span>
-        </a>
-        <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-grow-1 justify-content-center me-auto mb-2 mb-lg-0">
-            <li class="nav-item pe-1">
-              <a class="nav-link" aria-current="page" href="../">Halaman Utama</a>
-            </li>
-            <li class="nav-item pe-1">
-              <a class="nav-link active" href="">Materi</a>
-            </li>
-            <li class="nav-item pe-1">
-              <a class="nav-link" href="#">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/adiiaryasutaa/skenmath/blob/main/LICENSE">Lisensi</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <button id="theme-toggle-btn" class="btn" type="button"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <custome-navbar
+      brand-logo-src="../assets/img/skenmath-logo-design-1.svg"
+      brand-href="../"
+      home-page-href="../"
+      material-href="./"
+      about-us-href="../tentang-kami/"
+      lisence-href="https://github.com/adiiaryasutaa/skenmath/blob/main/LICENSE"
+      active-page='2'
+    ></custome-navbar>
 
     <!-- Jumbotron -->
     <div id="banner" class="container-fluid flex-grow-1 d-flex justify-content-between px-sm-5">
@@ -245,46 +224,14 @@
 
 
   <!-- ========== Footer ========== -->
-  <footer id="footer" class="container-fluid bg-dark text-white py-5">
-    <div class="container d-flex flex-column flex-lg-row justify-content-between">
-      <div class="mb-4 mb-lg-0 me-3">
-        <h3><img id="skenmath-logo" src="../assets/img/skenmath-logo-design-1.svg" alt="skenmath-logo"> <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span></h3>
-        <ul class="list-unstyled">
-          <li class="mb-3"><span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> is maintained by <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> team.</li>
-          <li>© Copyright 2021 <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> team. All rights reserved.</li>
-        </ul>
-      </div>
-      <div class="d-flex flex-sm-row flex-column justify-content-lg-between">
-        <div class="d-flex mb-4 mb-lg-0">
-          <div class="">
-            <h5>NAVIGATIONS</h5>
-            <ul class="list-unstyled">
-              <li><a class="text-white-50 text-decoration-none" href="">Halaman utama</a></li>
-              <li><a class="text-white-50 text-decoration-none" href="materi/">Materi</a></li>
-              <li><a class="text-white-50 text-decoration-none" href="">Tentang kami</a></li>
-              <li><a class="text-white-50 text-decoration-none" href="https://github.com/adiiaryasutaa/skenmath/blob/main/LICENSE">Lisensi</a></li>
-            </ul>
-          </div>
-          <div class="mx-3">
-            <h5>SUPPORT</h5>
-            <ul class="list-unstyled">
-              <li><a class="text-white-50 text-decoration-none" href="">Report a Bug</a></li>
-              <li><a class="text-white-50 text-decoration-none" href="">Request a feature</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="">
-          <h5>About the Site</h5>
-          <ul class="list-unstyled">
-            <li>Hosted on <a class="text-white-50 text-decoration-none" href="https://vercel.com/">Vercel</a></li>
-            <li>Powered by <a class="text-white-50 text-decoration-none" href="">Bootstrap</a></li>
-            <li>Report <a class="text-white-50 text-decoration-none" href="https://github.com/adiiaryasutaa/skenmath/issues">an Issue</a></li>
-          </ul>
-          <a class="text-white text-decoration-none" href="https://github.com/adiiaryasutaa/skenmath"><i class="bi-github"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <custome-footer
+    brand-logo-src="../assets/img/skenmath-logo-design-1.svg"
+    brand-href="../"
+    home-page-href="../"
+    material-href="./"
+    about-us-href="../tentang-kami/"
+    lisence-href="https://github.com/adiiaryasutaa/skenmath/blob/main/LICENSE"
+  ></custome-footer>
   <!-- ========== Footer ========== -->
 
 
@@ -292,10 +239,10 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  <!-- Global JS -->
-  <script src="../dist/js/script.js"></script>
-  <script src="../dist/js/Theme.js"></script>
-  <script src="../dist/js/Navbar.js"></script>
+  <!-- Components -->
+  <script src="../dist/components/navbar.js"></script>
+  <script src="../dist/components/footer.js"></script>
+  <script src="../dist/components/theme.js"></script>
 
 </body>
 
