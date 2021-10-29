@@ -28,6 +28,10 @@ section#hero-banner {
   height: var(--hero-banner-height);
 }
 
+input#theme-switch {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
   img.binding-img {
     width: 30%;

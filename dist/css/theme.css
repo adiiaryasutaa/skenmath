@@ -22,6 +22,10 @@
   color: var(--text-color);
 }
 
+body, section#hero-banner, section#features, footer {
+  transition: none;
+}
+
 body {
   background-color: var(--primary-color);
 }

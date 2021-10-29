@@ -3,9 +3,10 @@
 const
   navbarFixed   = true,
   Y             = 20;
-
+  
 /********** CONFIG **********/
-
+  
+let navbarTheme = sessionStorage.getItem('darkModeEnabled') == null ? 'light' : (sessionStorage.getItem('darkModeEnabled') === 'true' ? 'dark' : 'light');
 
 class Navbar extends HTMLElement {
   constructor() {
@@ -21,7 +22,7 @@ class Navbar extends HTMLElement {
       materialHref = this.hasAttribute('material-href') ? this.getAttribute('material-href') : '#',
       aboutUsHref  = this.hasAttribute('about-us-href') ? this.getAttribute('about-us-href') : '#',
       lisenceHref  = this.hasAttribute('lisence-href') ? this.getAttribute('lisence-href') : '#',
-      activePage = this.hasAttribute('active-page') ? this.getAttribute('active-page') : '1';
+      activePage   = this.hasAttribute('active-page') ? this.getAttribute('active-page') : '1';
 
     this.innerHTML = `
       <nav id="navbar" class="${classes}">
@@ -49,7 +50,10 @@ class Navbar extends HTMLElement {
               </li>
             </ul>
             <div class="d-flex">
-              <button id="theme-toggle-btn" class="btn" type="button"><i id="theme-toggle-btn-icon" class="bi bi-moon-fill"></i></button>
+              <div class="form-check form-switch">
+                <input id="theme-switch" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck" ${navbarTheme == 'dark' ? 'checked' : ''}>
+                <label class="form-check-label" for="flexSwitchCheck">Dark mode</label>
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +69,6 @@ const
   navbarToggler = document.querySelector('custome-navbar #navbar-toggler');
 
 let
-  navbarTheme = 'light',
   navbarTogglerActive = false,
   windowScrolledY = window.scrollY > Y;
 
@@ -76,6 +79,7 @@ let
  * @since October 24, 2021
  */
 function changeNavbarTheme(boolean) {
+
   if (boolean) {
     navbar.classList.replace('navbar-light', 'navbar-dark');
     if (!windowScrolledY && !navbarTogglerActive) {
