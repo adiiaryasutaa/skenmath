@@ -10,13 +10,13 @@ class Footer extends HTMLElement {
       aboutUsHref  = this.hasAttribute('about-us-href') ? this.getAttribute('about-us-href') : '#',
       lisenceHref  = this.hasAttribute('lisence-href') ? this.getAttribute('lisence-href') : '#';
 
-    this.innerHTML = `    
+    this.innerHTML = `
       <footer id="footer" class="container-fluid bg-dark py-5">
         <div class="container d-flex flex-column flex-lg-row justify-content-between">
-          <div class="mb-4 mb-lg-0 me-3">
+          <div class="d-flex flex-column justify-content-between mb-4 mb-lg-0 me-3">
             <h3><img id="skenmath-logo" src="${brandLogoSrc}" alt="skenmath-logo"> <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span></h3>
             <ul class="list-unstyled">
-              <li class="mb-3"><span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> is maintained by <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> team.</li>
+              <li class="mb-1"><span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> is maintained by <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> team.</li>
               <li>© Copyright 2021 <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> team. All rights reserved.</li>
             </ul>
           </div>
@@ -46,7 +46,7 @@ class Footer extends HTMLElement {
                 <li>Powered by <a class="text-white-50 text-decoration-none" href="">Bootstrap</a></li>
                 <li>Report <a class="text-white-50 text-decoration-none" href="https://github.com/adiiaryasutaa/skenmath/issues">an Issue</a></li>
               </ul>
-              <a class="text-white text-decoration-none fs-5" href="https://github.com/adiiaryasutaa/skenmath"><i class="bi-github"></i></a>
+              <a class="text-decoration-none fs-5" href="https://github.com/adiiaryasutaa/skenmath"><i class="bi-github"></i></a>
             </div>
           </div>
         </div>

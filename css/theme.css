@@ -1,9 +1,3 @@
-/* 
-  Author: Adi Aryasuta
-  Created: October 9, 2021
-  Modified: October 24, 2021 
-*/
-
 :root {
   --primary-color: #fff;
   --secondary-color: #f8f9fa;
@@ -15,15 +9,15 @@
   --primary-color: #222;
   --secondary-color: rgb(37, 37, 37);
   --text-color: #f8f9fa;
-  --hero-banner-background-blend-mode: soft-light;
+  --blend-mode: soft-light;
 }
 
-* {
+section, a, a:hover {
   color: var(--text-color);
 }
 
-body, section#hero-banner, section#features, footer {
-  transition: none;
+img:not([src$="skenmath-logo.svg"]) {
+  mix-blend-mode: var(--blend-mode);
 }
 
 body {
@@ -31,7 +25,7 @@ body {
 }
 
 section#hero-banner {
-  background-blend-mode: var(--hero-banner-background-blend-mode);
+  background-blend-mode: var(--blend-mode);
 }
 
 section#hero-banner,

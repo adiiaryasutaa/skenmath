@@ -1,3 +1,4 @@
 section#hero-banner {
   height: calc(var(--hero-banner-height) / 1.4);
+  margin-bottom: 0;
 }
