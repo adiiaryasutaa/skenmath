@@ -29,7 +29,7 @@ class Navbar extends HTMLElement {
         <div class="container">
           <a class="navbar-brand" href="${brandHref}">
             <img src="${brandLogoSrc}" width="35px" alt="skenmath-logo">
-            <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span>
+            <span class="fw-light" style="color:#5cbcc3">SKEN</span><span class="fw-bold" style="color:#3974a3">MATH</span>
           </a>
           <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
