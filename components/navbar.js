@@ -5,7 +5,7 @@ const
   Y             = 20;
   
 /********** CONFIG **********/
-  
+
 let navbarTheme = sessionStorage.getItem('darkModeEnabled') == null ? 'light' : (sessionStorage.getItem('darkModeEnabled') === 'true' ? 'dark' : 'light');
 
 class Navbar extends HTMLElement {
@@ -64,9 +64,7 @@ class Navbar extends HTMLElement {
 
 customElements.define('custome-navbar', Navbar);
 
-const
-  navbar        = document.querySelector('custome-navbar nav'),
-  navbarToggler = document.querySelector('custome-navbar #navbar-toggler');
+const navbar = document.querySelector('custome-navbar nav');
 
 let
   navbarTogglerActive = false,
@@ -79,7 +77,6 @@ let
  * @since October 24, 2021
  */
 function changeNavbarTheme(boolean) {
-
   if (boolean) {
     navbar.classList.replace('navbar-light', 'navbar-dark');
     if (!windowScrolledY && !navbarTogglerActive) {
@@ -130,11 +127,19 @@ window.addEventListener('scroll', () => {
   }
 });
 
-navbarToggler.addEventListener('click', () => {
-  navbarTogglerActive = navbarTogglerActive ? false : true;
-  if (navbarFixed) {
-    changeNavbar(navbarTogglerActive || (!navbarTogglerActive && windowScrolledY));
-  } else {
-    changeNavbar(navbarTogglerActive);
+navbar.addEventListener('click', e => {
+  if (e.target.id == 'navbar-toggler' || e.target.classList.contains('navbar-toggler-icon')) {
+    navbarTogglerActive = navbarTogglerActive ? false : true;
+    changeNavbar(navbarFixed ? (navbarTogglerActive || (!navbarTogglerActive && windowScrolledY)) : navbarTogglerActive);
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.screen.width >= 992) {
+    navbarTogglerActive = false;
+    changeNavbar(windowScrolledY);
+    navbar.children[0].children[1].classList.add('collapsed');
+    navbar.children[0].children[1].setAttribute('aria-expanded', 'false');
+    navbar.children[0].children[2].classList.remove('show');
   }
 });
