@@ -1,29 +1,26 @@
-/********** CONFIG **********/
+const Y = 20;
 
-const
-  navbarFixed   = true,
-  Y             = 20;
-  
-/********** CONFIG **********/
-
-let navbarTheme = sessionStorage.getItem('darkModeEnabled') == null ? 'light' : (sessionStorage.getItem('darkModeEnabled') === 'true' ? 'dark' : 'light');
+let navbarFixed = true,
+    navbarTogglerActive = false,
+    windowScrolledY = window.scrollY > Y,
+    navbarTheme = sessionStorage.getItem('darkModeEnabled') == null ? 'light' : (sessionStorage.getItem('darkModeEnabled') === 'true' ? 'dark' : 'light');
 
 class Navbar extends HTMLElement {
   constructor() {
 
     super();
 
-    let classes = 'navbar navbar-expand-lg navbar-light bg-transparent py-4'.concat(navbarFixed ? ' fixed-top' : '');
+    navbarFixed = this.hasAttribute('fixed') ? (this.getAttribute('fixed') == 'true' ? true : false) : true;
     
-    let
-      brandLogoSrc = this.hasAttribute('brand-logo-src') ? this.getAttribute('brand-logo-src') : './',
-      brandHref    = this.hasAttribute('brand-href') ? this.getAttribute('brand-href') : '#',
-      homePageHref = this.hasAttribute('home-page-href') ? this.getAttribute('home-page-href') : '#',
-      materialHref = this.hasAttribute('material-href') ? this.getAttribute('material-href') : '#',
-      aboutUsHref  = this.hasAttribute('about-us-href') ? this.getAttribute('about-us-href') : '#',
-      lisenceHref  = this.hasAttribute('lisence-href') ? this.getAttribute('lisence-href') : '#',
-      activePage   = this.hasAttribute('active-page') ? this.getAttribute('active-page') : '1';
-
+    let brandLogoSrc = this.hasAttribute('brand-logo-src') ? this.getAttribute('brand-logo-src') : './',
+        brandHref    = this.hasAttribute('brand-href') ? this.getAttribute('brand-href') : '#',
+        homePageHref = this.hasAttribute('home-page-href') ? this.getAttribute('home-page-href') : '#',
+        materialHref = this.hasAttribute('material-href') ? this.getAttribute('material-href') : '#',
+        aboutUsHref  = this.hasAttribute('about-us-href') ? this.getAttribute('about-us-href') : '#',
+        lisenceHref  = this.hasAttribute('lisence-href') ? this.getAttribute('lisence-href') : '#',
+        activePage   = this.hasAttribute('active-page') ? this.getAttribute('active-page') : '1',
+        classes = 'navbar navbar-expand-lg navbar-light bg-transparent py-4'.concat(navbarFixed ? ' fixed-top' : '');
+    
     this.innerHTML = `
       <nav id="navbar" class="${classes}">
         <div class="container">
@@ -65,10 +62,6 @@ class Navbar extends HTMLElement {
 customElements.define('custome-navbar', Navbar);
 
 const navbar = document.querySelector('custome-navbar nav');
-
-let
-  navbarTogglerActive = false,
-  windowScrolledY = window.scrollY > Y;
 
 /**
  * If the parameter is true, the navbar will change its theme into dark.
