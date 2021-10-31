@@ -1,16 +1,17 @@
 <div align="center">
+  <img src="assets/skenmath-logo.svg" width="100px">
   <h1>SKENMATH</h1>
-  <p>Sebuah website untutk belajar matematika untuk SMA/SMK<p>
 </div>
 
-## Description
-Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum
+### Deskripsi
+SKENMATH adalah sebuah aplikasi website yang menyajikan bahan bacaan materi matematika untuk jenjang SMA/SMK.
 
-## Tech Stack
+### Tech Stack
 - Bootstrap
+- MathJax
 - Vercel
 
-## Contibutors
+### Kontributor
 - Candra Dewi
 - Ninda Tariani
 - Dinda Nirmala
