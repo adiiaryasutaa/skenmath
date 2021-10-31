@@ -2,7 +2,7 @@
   --primary-color: #fff;
   --secondary-color: #f8f9fa;
   --text-color: #444;
-  --hero-banner-background-blend-mode: normal;
+  --blend-mode: normal;
 }
 
 [data-theme="dark"] {
@@ -28,7 +28,6 @@ section#hero-banner {
   background-blend-mode: var(--blend-mode);
 }
 
-section#hero-banner,
-section#features {
+section:nth-child(odd) {
   background-color: var(--secondary-color);
 }

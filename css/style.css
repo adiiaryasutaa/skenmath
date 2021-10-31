@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --section-gap: 10rem !important;
   --hero-banner-height: 580px;
+  --section-padding-y: 10rem;
 }
 
 * {
@@ -18,8 +18,14 @@ input#theme-switch {
   cursor: pointer;
 }
 
-section {
-  margin-bottom: var(--section-gap);
+section:not(:first-of-type) {
+  padding: var(--section-padding-y) 0;
+}
+
+@media (max-width: 768px) {
+  section:not(:first-of-type) {
+    padding: calc(var(--section-padding-y) / 2) 0;
+  }
 }
 
 section#hero-banner {
@@ -30,15 +36,9 @@ section#hero-banner {
   height: var(--hero-banner-height);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   img.binding-img {
-    width: 30%;
-  }
-}
-
-@media (max-width: 576px) {
-  img.binding-img {
-    width: 80%;
+    width: 100%;
   }
 }
 
