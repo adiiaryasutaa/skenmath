@@ -12,7 +12,7 @@
   --blend-mode: soft-light;
 }
 
-section, a, a:hover {
+section, a, a:hover, article, nav {
   color: var(--text-color);
 }
 

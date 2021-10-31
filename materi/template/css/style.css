@@ -1,0 +1,4 @@
+main {
+  padding: calc(var(--section-padding-y) / 2) 0;
+  text-align: justify;
+}
