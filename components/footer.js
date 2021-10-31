@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
       <footer id="footer" class="container-fluid bg-dark py-5">
         <div class="container d-flex flex-column flex-lg-row justify-content-between">
           <div class="d-flex flex-column justify-content-between mb-4 mb-lg-0 me-3">
-            <h3><img id="skenmath-logo" src="${brandLogoSrc}" alt="skenmath-logo"> <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span></h3>
+            <h3><img class="skenmath-logo" src="${brandLogoSrc}" alt="skenmath-logo"> <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span></h3>
             <ul class="list-unstyled">
               <li class="mb-1"><span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> is maintained by <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> team.</li>
               <li>© Copyright 2021 <span class="fw-light">SKEN</span><span class="fw-bold">MATH</span> team. All rights reserved.</li>

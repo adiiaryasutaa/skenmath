@@ -36,6 +36,19 @@ section#hero-banner {
   height: var(--hero-banner-height);
 }
 
+section#hero-banner div#banner img.rotate {
+  animation: rotation 2s ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 @media (max-width: 991px) {
   img.binding-img {
     width: 100%;
@@ -70,12 +83,12 @@ footer a:hover {
   color: #f8f9fa !important;
 }
 
-footer img#skenmath-logo {
+footer img.skenmath-logo {
   filter: grayscale(100%);
   mix-blend-mode: soft-light;
 }
 
-footer img#skenmath-logo:hover {
+footer img.skenmath-logo:hover {
   filter: none;
   mix-blend-mode: none;
 }
