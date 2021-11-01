@@ -8,6 +8,7 @@ SKENMATH adalah sebuah aplikasi website yang menyajikan bahan bacaan materi mate
 
 ### Tech Stack
 - Bootstrap
+- Bootstrap Icons
 - MathJax
 - Vercel
 
