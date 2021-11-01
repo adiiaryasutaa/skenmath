@@ -16,7 +16,11 @@ section, a, a:hover, article, nav {
   color: var(--text-color);
 }
 
-img:not([src$="skenmath-logo.svg"]) {
+a.card-link:hover {
+  color: var(--text-color) !important;
+}
+
+img:not([src$="skenmath-logo.svg"], [class*="profile-card-img"]) {
   mix-blend-mode: var(--blend-mode);
 }
 

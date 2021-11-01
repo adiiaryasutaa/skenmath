@@ -1,3 +1,9 @@
 section#hero-banner {
-  height: calc(var(--hero-banner-height) / 1.4);
+  height: calc(var(--hero-banner-height) / 1.6);
+}
+
+@media (max-width: 992px) {
+  div.profile-card {
+    width: 100% !important;
+  }
 }
